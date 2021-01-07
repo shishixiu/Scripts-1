@@ -29,8 +29,7 @@ jobs:
           npm install
           
       - name: '运行 【中青看看赚任务】'
-        if: env.YOUTH_START
-            env.YOUTH_END
+        if: env.YOUTH_START       
         run: |
           node Task/youth_gain.js
         env:
