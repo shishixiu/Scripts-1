@@ -34,6 +34,7 @@ jobs:
         run: |
           node Task/youth_gain.js
         env:
+          DEFAULT_BRANCH: main
           YOUTH_START: ${{ secrets.YOUTH_START }}
           YOUTH_END: ${{ secrets.YOUTH_END }}
 
